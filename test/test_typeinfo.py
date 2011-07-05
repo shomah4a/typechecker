@@ -5,6 +5,17 @@ from typechecker import typeinfo
 
 
 
+def check(func, error, *args, **argd):
+
+    try:
+        func(*args, **argd)
+    except error, e:
+        pass
+    else:
+        raise
+    
+
+
 def test_check():
 
     @typeinfo.typeinfo(int, x=int, y=int)
@@ -22,6 +33,16 @@ def test_check():
         pass
     else:
         raise
+
+
+    @typeinfo.typeinfo(object, x=(int, float))
+    def test(x):
+        pass
+
+    test(10)
+    test(21.0)
+
+    check(test, TypeError, 'aa')
 
 
 
