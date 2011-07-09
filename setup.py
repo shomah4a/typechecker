@@ -20,7 +20,7 @@ setuptools.setup(
     classifiers='''
 Programming Language :: Python
 Development Status :: 2 - Pre-Alpha
-License :: OSI Approved :: GNU General Public License (GPL)
+License :: OSI Approved :: GNU Library or Lesser General Public License (LGPL)
 Programming Language :: Python :: 2
 Programming Language :: Python :: 2.6
 Programming Language :: Python :: 2.7

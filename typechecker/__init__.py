@@ -15,5 +15,5 @@ This module provides dynamic type check mechanism.
 
 __version__ = '0.1.0'
 __author__ = 'Shoma Hosaka'
-__license__ ='GPL'
+__license__ ='LGPL'
 
